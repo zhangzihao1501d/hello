@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<input type="button" id="btn2" value="-">
+<input type="text"  id="txt" value="1">	
+<input type="button" id="btn1" value="+">
+<span>单价：20.3元</span>
+<span >总价：<b id="mn">20.3</b>元</span>
+<script>
+/*	var btn1=document.getElementById('btn1');
+	var txt=document.getElementById("txt");
+	var btn2=document.getElementById("btn2");
+	var mn=document.getElementById("mn");
+
+btn1.onclick=function(){
+	txt.value=Number(txt.value)+1;
+	mn.innerHTML=(txt.value*20.3).toFixed(2);
+}	
+btn2.onclick=function(){
+	txt.value=Number(txt.value)-1;
+	
+	if (txt.value<0) {
+		txt.value=0;
+	}
+	mn.innerHTML=(txt.value*20.3).toFixed(2);
+}*/
+var btn1=document.getElementById("btn1");
+var btn2=document.getElementById("btn2");
+var txt=document.getElementById("txt");
+var mn=document.getElementById("mn");
+
+btn1.onclick=function(){
+	txt.value=Number(txt.value)+1;
+	mn.innerHTML=(txt.value*20.3).toFixed(2);
+}
+ btn2.onclick=function(){
+ 	txt.value=Number(txt.value)-1;
+ 	if (txt.value<0) {
+ 		txt.value=0;
+ 	};
+ 	
+ 	mn.innerHTML=(txt.value*20.3).toFixed(2);
+ }
+
+
+
+
+</script>
+</body>
+</html>
